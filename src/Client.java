@@ -1,20 +1,29 @@
+import javax.swing.*;
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class Client implements Runnable {
+public class Client extends JFrame implements Runnable{
 
     private Socket client;
     private BufferedReader in;
     private PrintWriter out;
     private boolean done;
 
+    private JLabel heading = new JLabel("Client");
+    private JTextArea messageArea = new JTextArea();
+    private JTextField messageInput = new JTextField();
+
     @Override
     public void run() {
         try {
-            client = new Socket("localhost", 9999);
+
+            createGUI();
+
+            client = new Socket("192.168.1.19", 9999);
             out = new PrintWriter(client.getOutputStream(), true);
             in = new BufferedReader(new InputStreamReader(client.getInputStream()));
 
@@ -64,6 +73,26 @@ public class Client implements Runnable {
                 shutdown();
             }
         }
+
+    }
+
+    private void createGUI() {
+
+        this.setTitle("Client");
+        this.setSize(600, 600);
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        this.setLayout(new BorderLayout());
+
+        this.add(heading, BorderLayout.NORTH);
+        this.add(messageArea, BorderLayout.CENTER);
+        this.add(messageInput, BorderLayout.SOUTH);
+
+        heading.setHorizontalAlignment(SwingConstants.CENTER);
+        heading.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        this.setVisible(true);
 
     }
 
