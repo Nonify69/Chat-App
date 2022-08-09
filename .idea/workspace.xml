@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44e425ca-25c8-4692-8bfb-4ecab874fd2c" name="Changes" comment="Simple Chatting">
+    <list default="true" id="44e425ca-25c8-4692-8bfb-4ecab874fd2c" name="Changes" comment="Creating GUI for Application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
     </list>
@@ -22,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -81,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659851626808</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Creating GUI for Application">
+      <created>1659938165531</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659938165531</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Simple Chatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple Chatting" />
+    <MESSAGE value="Creating GUI for Application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating GUI for Application" />
   </component>
 </project>
